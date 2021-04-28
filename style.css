@@ -1,3 +1,17 @@
+
+* {
+    box-sizing: border-box;
+
+}
 h1 {
     font-size: 20px;
+}
+img {
+
+    max-width: 45%;
+    height: auto;
+
+}
+.item-reel {
+    display: flex;
 }
