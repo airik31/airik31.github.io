@@ -1,7 +1,40 @@
 
 * {
     box-sizing: border-box;
+    text-align: center;
+   
+}
+body {
+    background-color: olivedrab;
+}
+header {
+    background-color: aquamarine;
+    max-width: 20%;
+    min-width: 18;
 
+
+    margin-left: 40%;
+    margin-top: 0%;
+    padding-top: 0%;
+    border-radius: 50%;
+}
+nav {
+    max-width: 20%;
+    min-width: 18;
+    margin-left: 40%;
+    margin-top: 0%;
+    padding-top: 0%;
+    background-color: steelblue;
+    border-radius: 20%/20%;
+}
+main {
+    background-color: lightskyblue;
+    max-width: 40%;
+    margin-left: 30%;
+    margin-top: 0%;
+    padding-top: 0%;
+    border-radius: 5%;
+    box-shadow: seagreen;
 }
 h1 {
     font-size: 20px;
@@ -15,3 +48,10 @@ img {
 .item-reel {
     display: flex;
 }
+
+@media only screen and (max-width: 700px) {
+    main, header, nav {
+        max-width: 100%;
+        margin-left: 0%;
+    }
+  }
