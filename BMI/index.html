@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    </head>
+    <body> 
+        <script src="script.js" async defer></script>
+
+        <header>
+            <h1>BMI CALCULATOR</h1>
+
+        </header>
+        <!-- <nav>
+           <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">+</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#">link 1</a>
+                <a href="#">link 2</a>
+                <a href="#">link 3</a>
+            </div>
+           </div>
+        </nav> -->
+        
+        <div class="gender" id=maleDiv>
+            <button onclick="selectMale()" class="genderBtn" id="male">MALE</button>
+   
+        </div>
+        <div id="maleChecked">
+            <h1>Male Selected &#10003;</h1>
+        </div>
+        <div class="gender" id="femaleDiv">
+            <button onclick="selectFemale()" class="genderBtn" id="female">FEMALE</button>
+
+        </div>
+        <div id="femaleChecked">
+            <h1>Female Selected &#10003;</h1>
+        </div>
+        <div class="height" id="height">
+            <h2>HEIGHT</h2>
+            <p id="displayValue"></p>
+            <div class="slidecontainer">
+                <input type="range" min="1" max="220" value="150" class="slider" id="myRange">
+            </div>
+        </div>
+        <div class="weight" id="weight">
+            <h2>WEIGHT</h2>
+            <div id="valueW">0</div>
+            <button onclick="plusW()" class="weightBtn" id="plusW">+</button>
+            <button onclick="minusW()" class="weightBtn" id="minusW">-</button>
+        </div>
+        <div class="age" id="age">
+            <h2>AGE</h2>
+            <div id="valueAge">0</div>
+            <button onclick="plusAge()" class="ageBtn" id="plusAge">+</button>
+            <button onclick="minusAge()" class="ageBtn" id="minusAge">-</button>
+        </div>
+
+
+        <div class="calculate" id="calculate">
+            <button onclick="calculate()" class="calculateBtn">CALCULATE YOUR BMI</button>
+        </div>
+        <div id="result">
+
+
+        </div>
+
+
+    </body>
+</html>
